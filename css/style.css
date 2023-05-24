@@ -49,14 +49,15 @@ body {
     height: 3.2rem;
 }
 
-.header__contact-buttom {
+  .header__contact-buttom {
     text-decoration: none;
     color: var(--primary-color);    
     padding: 1rem 2.3rem;
     font-weight: 600;
     border: 0.3rem solid var(--primary-color);
     border-radius: 0.5rem;
-}
+}  
+
 
 /* PRESENTATION */
 
@@ -154,10 +155,6 @@ body {
 
 /* SERVICES */
 
- .services {
-
-}
-
 .services__tag {
     color: var(--gray-100);
     font-size: 1.8rem;
@@ -173,10 +170,6 @@ body {
     margin-top: 2.6rem;
     line-height: 30px;
     text-align: center;
-}
-
-.services__items-container{
-    
 }
 
 .services__item {
@@ -266,4 +259,229 @@ body {
     font-weight: 500;
 }
 
+/* RESPONSIVIDADE */
 
+@media (min-width: 768px) {
+
+    .about-us, .services, .bottom-slogan__background, .footer {
+        margin-top: 11.5rem;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    /* PRESENTATION */
+
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation__description-container {
+        align-items: flex-start;
+        margin-right: 72px;
+    }
+
+    .presentation__description-title {
+        text-align: left;
+        font-size: 2.6rem;
+        line-height: 38px;
+    }
+
+    .presentation__description-image {
+        margin-top: 0;
+    }
+
+    /* ABOUT-US */
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us__description-container {
+        margin-right: 90px;
+    }
+    
+    .about-us__tag {
+        text-align: left;
+    }
+
+    .about-us__description-title {
+        text-align: left;
+        font-size: 2.6rem;
+        line-height: 38px;
+    }
+
+    .about-us__image {
+        margin-top: 0;
+    }
+
+    /* SERVICES */
+
+    .services__title {
+        font-size: 2.6rem;
+    }
+
+    .services__items-container {
+        display: flex;
+        align-items: baseline;
+    } 
+
+    .services__item {
+        width: 100%;
+    }
+
+    /* BOTTOM-SLOGAN */
+
+    .bottom-slogan__background {
+        padding: 0;
+    }
+
+    .bottom-slogan {
+        flex-direction: row;
+    }
+
+    .bottom-slogan__image {
+        margin-top: 0;
+    }
+
+    .bottom-slogan__description {
+        font-size: 2.6rem;
+        line-height: 38px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .about-us, .services, .bottom-slogan__background, .footer {
+        margin-top: 15.0rem;
+    }
+
+    .text {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+
+    /* Header */
+
+    .header__logo {
+        width: 18.1rem;
+        height: 4.8rem;
+    }
+    
+    .header__contact-buttom {
+        width: 18.3rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+        display: block;
+        align-items: center;
+        display: flex;
+        justify-content : center;    
+        padding: 0;
+    }
+
+    /* Presentation */
+
+    .presentation__description-image {
+        max-width: 420px;
+    }
+
+    /* About-us */
+
+    .about-us__image {
+        max-width: 400px;
+    }
+
+    /* Bottom-slogan */
+
+    .bottom-slogan__image {
+        max-width: 431px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .text {
+        font-size: 1.8rem;
+        line-height: 27px;
+    }
+
+    /* Presentation */
+
+    .presentation__description-title {
+        font-size: 3.6rem;
+        line-height: 55px;
+    }
+
+    .presentation__description-image {
+        max-width: 620px;
+    }
+
+    /* About-us */
+
+    .about-us__tag {
+        font-size: 2.4rem;
+    }
+
+    .about-us__description-title {
+        font-size: 3.6rem;
+        line-height: 55px;
+    }
+
+    .about-us__image {
+        max-width: 558px;
+    }
+
+    /* Services */
+
+    .services__tag {
+        font-size: 2.4rem;
+    }
+
+    .services__title {
+        font-size: 3.6rem;
+    }
+
+    .services__item-image{
+        width: 10.3rem;
+    }
+
+    .services__item-content {
+        font-size: 2rem;
+    }
+
+    /* Bottom-slogan */
+
+    .bottom-slogan__containter {
+        margin-right: 5.2rem;
+    }
+
+    .bottom-slogan__text {
+        font-size: 2.4rem;
+    }
+
+    .bottom-slogan__description {
+        font-size: 3.6rem;
+        line-height: 55px;
+    }
+
+    .bottom-slogan__contact-buttom {
+        width: 24.1rem;
+        height: 5.7rem;
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+
+    .footer__image {
+        width: 18.3rem;
+        height: 4.8rem;
+    }
+
+    .footer__description {
+        font-size: 1.6rem;
+    }
+
+}
